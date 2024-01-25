@@ -14,20 +14,23 @@ export const Button = (props: Props) => {
     if (session) {
         return (
             <button
-                className="text-white bg-black p-4"
+                className="text-white bg-black p-4 cursor-pointer"
                 onClick={(e) => {
                     e.preventDefault();
                     signOut();
                 }}
             >
-                Log Out
+                Sign Out
             </button>
         );
     }
 
     return (
-        <div className="text-white bg-black p-4" onClick={() => signIn()}>
-            Login
+        <div
+            className="text-white bg-black p-4 cursor-pointer"
+            onClick={() => signIn()}
+        >
+            Sign In
         </div>
     );
 };
