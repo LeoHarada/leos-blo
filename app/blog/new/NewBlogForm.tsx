@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react";
 import { createPost } from "@/app/actions/publishPost";
 import "@uploadthing/react/styles.css";
 import { UploadButton } from "../../utils/uploadthing";
+import { Prisma } from "@prisma/client";
 
 type Props = {};
 
@@ -14,22 +15,34 @@ const NewBlogForm = (props: Props) => {
     const [content, setContent] = useState<string>("");
     const [thumbnail, setThumbnail] = useState<string | null>(null);
     const [submitted, setSubmitted] = useState<boolean>(false);
+    const [categoryId, setCategoryId] = useState<number | null>(null);
+    const [postId, setPostId] = useState<number | null>(null);
 
     if (!session && status !== "loading")
         return <div>You must be signed in to post</div>;
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const user = session?.user as any;
         const userId = session?.user?.id;
 
         if (!userId) return;
         try {
-            const post = await createPost({
+            let newPost: Prisma.PostUncheckedCreateInput = {
                 title,
                 content,
                 authorId: userId,
                 imgURL: thumbnail,
-            });
+            };
+
+            if (categoryId) {
+                newPost.categories = {
+                    connect: [{ id: categoryId }],
+                };
+            }
+
+            const post = await createPost(newPost);
+            setPostId(post.id);
             setSubmitted(true);
         } catch (error) {
             console.log(error);
