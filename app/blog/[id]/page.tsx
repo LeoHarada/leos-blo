@@ -17,11 +17,18 @@ const page = async ({
             author: true,
         },
     });
+    console.log(post);
 
     return (
         <div className="container-sm mt-6">
             {post && (
                 <>
+                    {post.imgURL && (
+                        <div
+                            className="w-full h-24 my-4 bg-contain bg-no-repeat"
+                            style={{ backgroundImage: `url(${post.imgURL})` }}
+                        ></div>
+                    )}
                     <h1 className="text-5xl mb-5">{post.title}</h1>
                     <div className="flex items-center">
                         <p className="text-sm text-gray-500">By</p>
