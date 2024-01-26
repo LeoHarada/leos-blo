@@ -1,6 +1,7 @@
 import React from "react";
 import { Prisma } from "@prisma/client";
 import Link from "next/link";
+import Image from "next/image";
 
 type Post = Prisma.PostGetPayload<{
     include: { categories: true };
@@ -25,13 +26,13 @@ export const PostsList = (props: PostListProps) => {
                         <article className="w-full h-full">
                             <figure className="w-full h-30 md:h-40 lg:h-72 border-b-2">
                                 {post.imgURL ? (
-                                    <img
+                                    <Image
                                         src={post.imgURL}
                                         alt="thumbnail"
                                         className="w-full h-full object-cover"
                                     />
                                 ) : (
-                                    <img
+                                    <Image
                                         src="/article-placeholder.png"
                                         alt="thumbnail"
                                         className="w-full h-full object-cover"

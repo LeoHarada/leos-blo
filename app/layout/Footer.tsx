@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="bg-gray-800 text-white py-12 px-4">
             <div className="flex container justify-between">
                 <div className="flex flex-row items-center">
-                    <div className="text-2xl mb-3">Leo's Blog</div>
-                    <div className="text-sm">© 2024 Leo's Blog</div>
+                    <div className="text-2xl mb-3">Leo&apos;s Blog</div>
+                    <div className="text-sm">© 2024 Leo&apos;s Blog</div>
                 </div>
                 <div className="flex">
                     <a href="https://github.com/LeoHarada" target="_blank">

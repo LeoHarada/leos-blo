@@ -10,7 +10,7 @@ const HeroSection = (props: Props) => {
             <section className="grid container grid-cols-1 sm:grid-cols-12 pt-6 pb-8">
                 <div className="col-span-7 w-full place-self-center text-center sm:text-left justify-self-start">
                     <h1 className="text-2xl sm:text-4xl md:text-6xl md:leading-normal">
-                        Leo's World in Articles
+                        Leo&apos;s World in Articles
                     </h1>
                     <h2>
                         Stay up-to-date with the latest tech news and

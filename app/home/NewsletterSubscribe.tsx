@@ -30,8 +30,8 @@ const NewsletterSubscribe = (props: Props) => {
             <div className="flex flex-col mt-4 text-white">
                 <h2 className="text-2xl">Thank you for subscribing!</h2>
                 <p>
-                    You'll receive the latest tech news and announcements in
-                    your inbox.
+                    You&apos;ll receive the latest tech news and announcements
+                    in your inbox.
                 </p>
             </div>
         );
