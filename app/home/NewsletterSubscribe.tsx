@@ -42,9 +42,9 @@ const NewsletterSubscribe = () => {
                     name="email"
                     id="email"
                     placeholder="Enter your email"
-                    className="border-2 rounded-full rounded-r-none text-sm py-3 px-2 bg-gray-200 text-gray-800 outline-none placeholder-gray-500 focus:bg-gray-100 flex-1 p-2"
+                    className="border-2 rounded-full rounded-r-none text-sm py-3 px-2 bg-gray-200 text-gray-800 outline-none placeholder-gray-500 focus:bg-gray-100 flex-1"
                 />
-                <button className="border-2 rounded-full rounded-l-none text-sm py-3 px-4 bg-gray-800 text-gray-100 font-semibold uppercase hover:bg-gray-200 hover:text-gray-800">
+                <button className="border-2 rounded-full rounded-l-none text-sm py-3 px-4 bg-gray-800 text-gray-100 font-semibold hover:bg-gray-200 hover:text-gray-800">
                     Subscribe
                 </button>
             </div>

@@ -12,7 +12,7 @@ const HeroSection = (props: Props) => {
                     <h1 className="text-2xl sm:text-4xl md:text-6xl md:leading-normal">
                         Leo&apos;s World Through Articles
                     </h1>
-                    <h2 className="mt-3.5">
+                    <h2 className="mt-3.5 font-bold">
                         Stay up-to-date on my coding journey and find out what's
                         going on in my world.
                     </h2>
@@ -29,7 +29,7 @@ const HeroSection = (props: Props) => {
                     </ul>
                     <Link
                         href={"/blog/all"}
-                        className="mr-6 mt-5 relative px-6 py-3 font-bold text-white rounded-lg group"
+                        className="mr-6 mt-5 relative px-6 py-3 font-semibold text-white rounded-lg group"
                     >
                         <span className="absolute inset-0 w-full h-full transition duration-100 ease-out transform translate-x-1 translate-y-1 bg-[#ffbefb] ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full border-4 border-black transition duration-100 transform -translate-x-1 -translate-y-1 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>

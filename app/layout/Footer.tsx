@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="text-2xl mb-3">Leo&apos;s Blog</div>
                     <div className="text-sm ml-1">© 2024 Leo&apos;s Blog</div>
                 </div>
-                <div className="flex">
+                <div className="flex justify-center items-center">
                     <a href="https://github.com/LeoHarada" target="_blank">
                         <Image
                             src={githubIcon}

@@ -4,9 +4,9 @@ import NewsletterSubscribe from "./NewsletterSubscribe";
 
 const CalloutSection = () => {
     return (
-        <div className="border-t-2 mt-12 p-8">
-            <div className="container flex flex-col justify-between sm:flex-row sm:justify-evenly">
-                <div className="place-self-center px-4 my-12 text-center">
+        <div className="border-t-2 mt-12 sm:p-8">
+            <div className="container flex flex-col justify-evenly items-center md:flex-row">
+                <div className="place-self-center px-4 my-12 text-center md:max-w-[60%]">
                     <h2 className="font-bold text-xl">Stay in the Know</h2>
                     <p className="mb-4">
                         Stay up-to-date with the latest tech news and
@@ -20,7 +20,7 @@ const CalloutSection = () => {
                 <div className="mb-8">
                     <Image
                         priority={true}
-                        className="w-[150] h-[150] sm:w-[300] sm:h-[300]"
+                        className="w-[150px] h-[150px] sm:h-[300px]"
                         src="/coding.svg"
                         width={300}
                         height={300}
