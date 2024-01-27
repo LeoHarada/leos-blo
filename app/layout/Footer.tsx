@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import githubIcon from "../../public/github-icon.svg";
 import linkedinIcon from "../../public/linkedin-icon.svg";
 
@@ -8,11 +7,11 @@ type Props = {};
 
 const Footer = () => {
     return (
-        <div className="bg-gray-800 text-white py-12 px-4">
+        <div className="text-black px-4">
             <div className="flex container justify-between">
                 <div className="flex flex-row items-center">
                     <div className="text-2xl mb-3">Leo&apos;s Blog</div>
-                    <div className="text-sm">© 2024 Leo&apos;s Blog</div>
+                    <div className="text-sm ml-1">© 2024 Leo&apos;s Blog</div>
                 </div>
                 <div className="flex">
                     <a href="https://github.com/LeoHarada" target="_blank">

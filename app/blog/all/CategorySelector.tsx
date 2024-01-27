@@ -11,7 +11,7 @@ type CategorySelectorPropsWithState = CategorySelectorProps & {
 };
 
 export const CategorySelector = (props: CategorySelectorPropsWithState) => {
-    const bgClasses = ["bg-pink-500", "bg-blue-500", "bg-yellow-500"];
+    const bgClasses = ["bg-[#ffbefb]", "bg-[#faff91]", "bg-[#b7f8ff]"];
 
     return (
         <div className="flex  flex-col justify-center my-4">
