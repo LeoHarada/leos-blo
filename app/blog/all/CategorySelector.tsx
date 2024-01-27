@@ -11,10 +11,10 @@ type CategorySelectorPropsWithState = CategorySelectorProps & {
 };
 
 export const CategorySelector = (props: CategorySelectorPropsWithState) => {
-    const bgClasses = ["bg-[#ffbefb]", "bg-[#faff91]", "bg-[#b7f8ff]"];
+    const bgClasses = ["bg-[#EDC9E0]", "bg-[#ffff86]", "bg-[#cefffd]"];
 
     return (
-        <div className="flex  flex-col justify-center my-4">
+        <div className="flex flex-col justify-center my-4">
             <div className="flex justify-center flex-wrap">
                 {props.categories.map((category, index) => (
                     <button

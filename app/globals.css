@@ -20,4 +20,14 @@
     .container-sm {
         @apply max-w-md mx-auto sm:max-w-xs;
     }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    .post-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 }
