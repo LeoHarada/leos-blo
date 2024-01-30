@@ -16,11 +16,11 @@ export const PostsList = (props: PostListProps) => {
             {props.posts.map((post: Post) => (
                 <div
                     key={post.id}
-                    className="w-full sm:w-40 md:w-60 lg:w-80 h-full bg-white"
+                    className="w-full sm:w-40 md:w-60 lg:w-80 h-full bg-white shadow-2xl hover:translate-y-1 duration-300"
                 >
                     <Link
                         href={`/blog/${post.id}`}
-                        className="block cursor-pointer border-2 rounded-md neo-shadow focus:shadow-none focus:translate-x-1 focus:translate-y-1 transform transition-shadow duration-100"
+                        className="block cursor-pointer border-2 neo-shadow"
                     >
                         <article className="w-full h-full">
                             <figure className="w-full h-30 md:h-40 lg:h-72 border-b-2 ">
@@ -47,7 +47,9 @@ export const PostsList = (props: PostListProps) => {
                             <p className="text-xs mb-4 line-clamp-4">
                                 {post.content}
                             </p>
-                            <p className="text-indigo-600">Read More</p>
+                            <p className="text-indigo-600">
+                                Click to read more!
+                            </p>
                         </div>
                     </Link>
                 </div>

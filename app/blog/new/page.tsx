@@ -4,7 +4,7 @@ import { getCategories } from "@/app/actions/getCategories";
 
 type Props = {};
 
-const page = async (props: Props) => {
+const page = async () => {
     const categories = await getCategories();
 
     return (

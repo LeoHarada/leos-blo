@@ -11,22 +11,14 @@ type CategorySelectorPropsWithState = CategorySelectorProps & {
 };
 
 export const CategorySelector = (props: CategorySelectorPropsWithState) => {
-    const bgClasses = ["bg-[#EDC9E0]", "bg-[#ffff86]", "bg-[#cefffd]"];
-
     return (
         <div className="flex flex-col justify-center my-4">
             <div className="flex justify-center flex-wrap">
-                {props.categories.map((category, index) => (
+                {props.categories.map((category) => (
                     <button
                         key={category.id}
                         onClick={() => props.selectCategory(category.id)}
-                        className={`inline-block rounded-full text-xl px-4 py-2 text-white mr-4 mb-4 ${
-                            bgClasses[index]
-                        } ${
-                            props.selectedCategoryId === category.id
-                                ? "neo-shadow"
-                                : ""
-                        }`}
+                        className="inline-block rounded-full text-xl px-4 py-2 text-white mr-4 mb-4 bg-[#808080]"
                     >
                         {category.name}
                     </button>
