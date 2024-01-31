@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useSession } from "next-auth/react";
 import { createPost } from "@/app/actions/publishPost";
 import Link from "next/link";
+import Image from "next/image";
 import type { Category } from "@prisma/client";
 import CategoryDropdown from "./CategoryDropdown";
 import { Prisma } from "@prisma/client";
@@ -97,7 +98,7 @@ const NewBlogForm = (props: Props) => {
                 />
                 <div className="self-start">
                     {thumbnail && (
-                        <img
+                        <Image
                             src={thumbnail}
                             alt="Thumbnail"
                             className="w-20 h-20 object-cover rounded-full"

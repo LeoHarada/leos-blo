@@ -13,8 +13,8 @@ const HeroSection = (props: Props) => {
                         Leo&apos;s World Through Articles
                     </h1>
                     <h2 className="mt-3.5 font-bold">
-                        Stay up-to-date on my coding journey and find out what's
-                        going on in my world.
+                        Stay up-to-date on my coding journey and find out
+                        what&apos;s going on in my world.
                     </h2>
                     <ul>
                         <li className="mr-6">
